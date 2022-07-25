@@ -1,6 +1,16 @@
 package co.edu.udea.ejemplostecnicas.poo.abstractaseinterfaces;
 
 public abstract class FiguraGeometrica {
-    public abstract double area();
-    public abstract double perimetro();
+    private String color;
+    
+    public abstract double getArea();
+    public abstract double getPerimetro();
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
 }

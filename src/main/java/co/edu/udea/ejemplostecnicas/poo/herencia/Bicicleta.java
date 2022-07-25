@@ -1,6 +1,8 @@
 package co.edu.udea.ejemplostecnicas.poo.herencia;
 
-public class Bicicleta {
+import co.edu.udea.ejemplostecnicas.poo.abstractaseinterfaces.Pedaleable;
+
+public class Bicicleta implements Pedaleable {
     private String color;
     private String modelo;
     private String referencia;

@@ -1,6 +1,8 @@
 package co.edu.udea.ejemplostecnicas.poo;
 
-public class Parlante {
+import co.edu.udea.ejemplostecnicas.poo.abstractaseinterfaces.Muteable;
+
+public class Parlante implements Muteable {
     private static int numeroExistencias = 0;
     public static final int VOLUMEN_MAXIMO = 30;
     private boolean encendido;
@@ -102,5 +104,10 @@ public class Parlante {
     
     public static void mostrarExistencias() {
         System.out.println(numeroExistencias + " existencias");
+    }
+
+    @Override
+    public void mute() {
+        volumen = 0;
     }
 }
