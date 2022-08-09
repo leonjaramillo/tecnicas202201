@@ -7,9 +7,23 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
+
+
 public class ClasePrincipal {
+    
+    public static void sumar(List<Integer> numeros) {
+        int suma = 0;
+        for(int i : numeros) {
+            suma += i;
+        }
+        System.out.println("Suma: " + suma);
+    }
+    
+    public static void silenciarCualquierDispositivo(Muteable d) {
+        d.mute();
+    }
     public static void main(String[] args) {
-        Jaula nuevaJaula = new Jaula();
+        /*Jaula nuevaJaula = new Jaula();
         Jaula otraJaula = new Jaula();
         Pato miPato = new Pato();
         nuevaJaula.setMiAve(miPato);
@@ -56,18 +70,31 @@ public class ClasePrincipal {
         
         juan.pedalear(juguete);
         
+        double edadDoble = 1000000000;
+        float edadFlotante = (float)edadDoble;
+        long nuevaEdad = (long)edadFlotante;
+        int masEdad = (int)nuevaEdad;
+        short otraEdad = (short)masEdad;
+        byte edad = (byte)otraEdad;
+        
+        System.out.println("Edad Doble: " + edadDoble);
+        System.out.println("Edad Flotante: " + edadFlotante);
+        System.out.println("Nueva Edad: " + nuevaEdad);
+        System.out.println("Más Edad: " + masEdad);
+        System.out.println("Otra Edad: " + otraEdad);
+        System.out.println("Edad: " + edad);
+        
+        FiguraGeometrica figura = new Circulo(3);
+        Circulo circulo = new Circulo(4);
+        
+        figura = circulo;
+        
+        circulo = (Circulo)figura;*/
+        
+        double resultado = Math.abs(67);
+        System.out.println(resultado);
         
     }
     
-    public static void sumar(List<Integer> numeros) {
-        int suma = 0;
-        for(int i : numeros) {
-            suma += i;
-        }
-        System.out.println("Suma: " + suma);
-    }
     
-    public static void silenciarCualquierDispositivo(Muteable d) {
-        d.mute();
-    }
 }

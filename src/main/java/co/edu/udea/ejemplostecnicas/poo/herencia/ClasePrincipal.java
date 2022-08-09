@@ -15,7 +15,5 @@ public class ClasePrincipal {
         otraCicla.setColor("rojo");
         System.out.println(miCicla);
         System.out.println(otraCicla);
-        
-        
     }
 }

@@ -3,9 +3,13 @@ package co.edu.udea.ejemplostecnicas.poo.abstractaseinterfaces;
 public class Circulo extends FiguraGeometrica {
     private double radio;
 
-    public Circulo(double radio) {
-        this.radio = radio;
+    public Circulo(double radio) throws RadioNegativoException {
         setColor("blanco");
+        if(radio >= 0) {
+            this.radio = radio;
+        } else {
+            throw new RadioNegativoException();
+        }
     }
     
     @Override
@@ -22,8 +26,12 @@ public class Circulo extends FiguraGeometrica {
         return radio;
     }
 
-    public void setRadio(double radio) {
-        this.radio = radio;
+    public void setRadio(double radio) throws RadioNegativoException {
+        if(radio >= 0) {
+            this.radio = radio;
+        } else {
+            throw new RadioNegativoException();
+        }
     }
     
     
