@@ -30,7 +30,7 @@ public class EjemploAleatorio {
 
     public static void escribirRegistrosAdicionales(String ruta) throws IOException {
         int posicionInicial = 2;
-        String cadena1 = "Esta es la posición 03\n";
+        String cadena1 = "Esta nueva posición 03\n";
         String cadena2 = "Esta es la posición 04\n";
         
         int numBytes = cadena1.getBytes().length;
